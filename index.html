@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Research Lab</title>
+</head>
+<body>
+  <h1>Security Research Lab</h1>
+  <p>Welcome to the security testing page.</p>
+
+  <p>
+    Privacy notice: This page sends a pageview
+    request to an external analytics endpoint,
+    which may record your public IP address,
+    browser information, and visit time.
+  </p>
+
+  <script>
+    const endpoint = "https://webhooksite.net/5e33b955-9b84-48d7-ab4e-2d8859eb430e";
+
+    const beacon = new Image();
+    beacon.src = endpoint
+      + "?event=pageview"
+      + "&page=" + encodeURIComponent(location.pathname)
+      + "&t=" + Date.now();
+  </script>
+</body>
+</html>
